@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* ============================================================ */
+/* Tailwind 4 CSS-first theme                                   */
+/* ============================================================ */
+@theme {
+  --color-heading:     #1A2831;
+  --color-body-text:   #2C4A5E;
+  --color-cta:         #E07820;
+  --color-footer-bg:   #1A2831;
+  --color-bg-light:    #EEF2F6;
+  --color-border:      #C5D3DC;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ============================================================ */
+/* Design tokens                                                */
+/* ============================================================ */
+:root {
+  --color-heading:        #1A2831;
+  --color-body-text:      #2C4A5E;
+  --color-cta:            #E07820;
+  --color-cta-hover:      #C86A18;
+  --color-cta-secondary:  #2C4A5E;
+  --color-white:          #FFFFFF;
+  --color-footer-bg:      #1A2831;
+  --color-bg-light:       #EEF2F6;
+  --color-border:         #C5D3DC;
+  --color-muted-text:     #888888;
+  --color-body-copy:      #333333;
+  --color-subtle:         #666666;
+
+  --space-section:        80px;
+  --space-section-sm:     48px;
+  --space-block:          32px;
+  --space-paragraph:      20px;
+  --mobile-side-padding:  20px;
+
+  --shadow-card:          0 2px 12px rgba(0,0,0,0.08);
+  --shadow-elevated:      0 8px 32px rgba(0,0,0,0.12);
+  --shadow-hover:         0 8px 24px rgba(0,0,0,0.15);
+
+  --radius-card:          12px;
+  --radius-feature-box:   8px;
+  --radius-btn:           8px;
+}
+
+/* ============================================================ */
+/* Reset and base                                               */
+/* ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  color: var(--color-body-copy);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ============================================================ */
+/* Button system                                                */
+/* ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 14px 32px;
+  border-radius: var(--radius-btn);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+.btn:hover  { transform: scale(1.03); box-shadow: var(--shadow-hover); }
+.btn:focus  { outline: none; box-shadow: 0 0 0 3px var(--color-cta); }
+
+.btn-primary   { background-color: var(--color-heading);       color: var(--color-white); }
+.btn-cta       { background-color: var(--color-cta);           color: var(--color-white); min-height: 56px; }
+.btn-cta:hover { background-color: var(--color-cta-hover); }
+.btn-secondary { background-color: var(--color-cta-secondary); color: var(--color-white); }
+.btn-outline   { background: transparent; border: 2px solid var(--color-white); color: var(--color-white); }
+
+/* ============================================================ */
+/* Mobile padding override                                      */
+/* ============================================================ */
+@media (max-width: 767px) {
+  section, footer {
+    padding-left: var(--mobile-side-padding) !important;
+    padding-right: var(--mobile-side-padding) !important;
+  }
+}
+
+/* ============================================================ */
+/* Reduced motion                                               */
+/* ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
