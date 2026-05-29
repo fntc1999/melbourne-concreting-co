@@ -17,8 +17,8 @@ const faqs = [
     question: 'Who is this right for?',
     answer: (
       <div>
-        <p>We do our best work for Melbourne homeowners who want it done properly the first time. If you're after the cheapest quote in the suburb, we're probably not your crew.</p>
-        <p className="mt-3">But if you want a driveway that still looks good in 15 years — and a tradie who actually shows up when they say they will — you're in the right place.</p>
+        <p>We do our best work on large residential projects — driveways, pool surrounds, full outdoor packages. If you're pricing up a $3,000 shed slab, we're probably not your crew.</p>
+        <p className="mt-3">But if you're investing $20,000 or more in your property's outdoor concrete and want it done right the first time — proper base prep, sharp edges, a finish that still looks good in 15 years — you're in the right place.</p>
       </div>
     ),
   },
@@ -26,7 +26,7 @@ const faqs = [
     question: 'How much does a new driveway cost?',
     answer: (
       <div>
-        <p>A standard residential driveway in Melbourne typically runs between $8,000 and $20,000+, depending on size, access, finish, and site conditions. We don't give quotes without seeing the job first because every property is different.</p>
+        <p>Our typical residential project runs between $20,000 and $60,000+, depending on scope, size, finish, and site conditions. A large exposed aggregate driveway on its own usually sits between $20,000 and $35,000. A full outdoor package — driveway, entertaining area, pool surround — can run $40,000 to $100,000+. We don't give quotes without seeing the job first because every property is different.</p>
         <p className="mt-3">What we can tell you: we don't cut corners on base preparation, reinforcement, or edge forming — those are the things that determine whether your driveway looks good in year 10 or starts crumbling in year 3.</p>
       </div>
     ),

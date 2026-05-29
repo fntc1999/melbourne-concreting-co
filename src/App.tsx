@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import OfferIntro from './components/OfferIntro';
 import OfferCards from './components/OfferCards';
 import FreeCallCTA from './components/FreeCallCTA';
+import OurWork from './components/OurWork';
 import LeadMagnet from './components/LeadMagnet';
 import Testimonials from './components/Testimonials';
 import FAQs from './components/FAQs';
@@ -77,6 +78,7 @@ function HomePage() {
       <Hero bookingLink={BOOKING_LINK} />
       <OfferIntro />
       <OfferCards bookingLink={BOOKING_LINK} />
+      <OurWork />
       <FreeCallCTA bookingLink={BOOKING_LINK} />
       <LeadMagnet />
       <Testimonials />

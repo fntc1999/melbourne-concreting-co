@@ -12,15 +12,13 @@ export default function Hero({ bookingLink }: HeroProps) {
       style={{ minHeight: '88vh', display: 'flex', alignItems: 'center' }}
     >
       {/* Background image with dark overlay */}
-      {/* PLACEHOLDER: Replace background with a real driveway photo from Unsplash or Pexels
-          Suggested search: "exposed aggregate concrete driveway australia"
-          Pexels example: https://www.pexels.com/search/concrete%20driveway/ */}
+      {/* PLACEHOLDER: Replace with a real photo of a finished residential driveway or outdoor area */}
       <div
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: `
-            linear-gradient(135deg, rgba(26,40,49,0.94) 0%, rgba(26,40,49,0.80) 60%, rgba(224,120,32,0.30) 100%),
-            url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80')
+            linear-gradient(135deg, rgba(26,40,49,0.92) 0%, rgba(26,40,49,0.72) 55%, rgba(224,120,32,0.25) 100%),
+            url('https://images.pexels.com/photos/8134848/pexels-photo-8134848.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')
           `,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
